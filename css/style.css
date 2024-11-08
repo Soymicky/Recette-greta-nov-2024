@@ -1,85 +1,92 @@
-/reset/
-
-h1, p, figure, ul, li{
+/*reset => remise à zero des règles css*/
+h1, p, figure, ul, li{ /*enlever les marges interne externe */
     margin: 0;
     padding: 0;
 }
 
-body{
+body{ /* changer la police de caractère de toutes les balises*/
     font-family: sans-serif;
 }
 
-ul, li {
+ul, li{ /* enlever les points devant les listes */
     list-style: none;
 }
 
-section {
+/* mise en page => faire en sorte QUE deux colonnes l'une à côté de l'autre*/
+
+section{
     width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-
-section .col1 {
+section .col1{
+    width: 48%;
+}
+section .col2{
     width: 48%;
 }
 
-section .col2 {
-    width: 48%;
-}
+/* section .col2 ul{
 
-section .col2 ul {
+} */
+
+.liste{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
 }
 
-section form * {
-    margin: 15px 0;
-    padding: 8px;
-}
-
-section form *{
+form > *:not(div){
     margin: 15px 0;
     padding: 8px 4px;
-    border: 1px solid blue;
+    border : 1px solid blue ; 
 }
 
-section form textarea{
+form textarea{
     height: 80px;
 }
 
-section form button{
+form div textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px 0;
+    padding: 8px 4px;
+    border : 1px solid blue ; 
+}
+
+form button{
     background: blue;
-    color: white;
+    color : white; 
     cursor: pointer;
 }
+
 /* accueil */
+
 .container{
-    width: 700px; /*le design a une largeur d'un ecran de tablette et petit ecran PC*/
+    width: 700px; /* le design a une largeur d'un écran de tablette ET petit écran PC */
     margin: 0 auto;
 }
-
-  header ul{/*caller le menu en haut à droite*/
-  display: flex;  
-  justify-content: flex-end;
-}
-header ul li {/*espace entre les liens et taille des liens*/
-margin-left: 20px;
-font-size: 1.6rem;
+header ul{ /* caller le menu en haut à droite */
+    display: flex;
+    justify-content: flex-end;
 }
 
+header ul li { /* espace entre les liens et taille des liens*/
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
 .gallerie{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin:20px 0;
 }
-
 .gallerie article{
     width: 32%;
     margin-bottom: 20px;
@@ -88,9 +95,9 @@ font-size: 1.6rem;
 }
 
 .gallerie article img{
-    width : 100%;
+    width: 100%;
 }
 
 .gallerie article h2{
-    flex:1;
+    flex:1; 
 }

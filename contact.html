@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container_2">
+    <div class="container">
         <header>
             <ul>
-                <li><a href="recette.html"></a></li>
-                <li><a href="index.html"></a></li>
-                <li><a href="contact.html></a></li>
-
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recette.html">Recette</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </header>
+        <main>
+            <h1>Nous contacter</h1>
+            <form action="">
+                <input type="text" placeholder="prénom NOM">
+                <input type="email" placeholder="votre@email.fr">
+                <select>
+                    <option value="">Choisir</option>
+                    <option value="">Service informatique</option>
+                    <option value="">Service commercial</option>
+                </select>
+                <div>
+                    <label for="commentaire">un commentaire</label><br>
+                    <textarea placeholder="votre message" id="commentaire"></textarea>
+                </div>
+                <button>Envoyer</button>
+            </form>
+        </main>
     </div>
-    <div class="contacter">
-        <h1>Nous contacter</h1>
-        <form>
-            <input type="text" id="prénom" placeholder="votre nom et prénom">
-            <input type="email" placeholder="votre@email.fr">
-
-        </form>
-    
 </body>
-
 </html>

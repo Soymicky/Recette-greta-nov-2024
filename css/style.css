@@ -59,3 +59,16 @@ section form button{
     color: white;
     cursor: pointer;
 }
+/* accueil */
+.container{
+    width: 700px; /*le design a une largeur d'un ecran de tablette et petit ecran PC* /
+    margin: 0 auto;
+}
+  header ul{/*caller le menu en haut à droite*/
+  display: flex;  
+  justify-content: flex-end;
+}
+header ul li {/*espace entre les liens et taille des liens*/
+margin-left: 20px;
+font-size: 1.6rem;
+}
